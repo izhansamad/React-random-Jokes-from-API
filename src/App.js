@@ -5,7 +5,7 @@ import GetJoke from "./GetJoke";
 function App() {
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
   const [showAgain, setShowAgain] = useState(0);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -29,7 +29,7 @@ function App() {
         <input placeholder="Last Name" ref={lastNameRef} />
         <button onClick={generateJoke}>Generate</button>
       </form>
-      <p style={{ color: "red" }}>{errorMessage}</p>
+      {/* <p style={{ color: "red" }}>{errorMessage}</p> */}
     </div>
   );
 }
